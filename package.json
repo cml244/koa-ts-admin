@@ -1,0 +1,43 @@
+{
+  "name": "koa-ts-admin",
+  "version": "1.0.0",
+  "description": "koa后台管理系统",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node appp/app.ts",
+    "server": "nodemon --watch app/**/* -e ts,tsx --exec ts-node ./app/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cml244/koa-ts-admin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cml244/koa-ts-admin/issues"
+  },
+  "homepage": "https://github.com/cml244/koa-ts-admin#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^8.0.8",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.1",
+    "mysql": "^2.18.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.0.1",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.4.0",
+    "@types/koa-static": "^4.0.1",
+    "@types/koa-views": "^2.0.4",
+    "@types/mysql": "^2.15.9",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2"
+  }
+}
