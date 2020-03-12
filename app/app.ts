@@ -20,11 +20,6 @@ app.use(bodyparser())
     .use(router.allowedMethods())
 
 routes(app);//引入应用的路由文件
-router.get('/', async (ctx: any) => {
-    await ctx.render('index', {
-        title: 'haha1'
-    });
-});
 
 
 app.listen(config.port);

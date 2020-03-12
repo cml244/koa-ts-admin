@@ -1,10 +1,21 @@
 import Koa from 'koa';
 import UserService from '../../service/user/UserServices'
-const service = new UserService()
 export default {    
     async list(ctx: Koa.Context) {
-        let list =  await service.list();
-        await ctx.render('index',{
+        let list =  await UserService.list();
+        await ctx.render('admin/user/index',{
+            list:list
+        })
+    },
+    async add(ctx: Koa.Context) {
+        let list =  await UserService.list();
+        await ctx.render('admin/user/add',{
+            list:list
+        })
+    },
+    async edit(ctx: Koa.Context) {
+        let list =  await UserService.list();
+        await ctx.render('admin/user/edit',{
             list:list
         })
     }

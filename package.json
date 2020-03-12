@@ -4,8 +4,7 @@
   "description": "koa后台管理系统",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node appp/app.ts",
-    "server": "nodemon --watch app/**/* -e ts,tsx --exec ts-node ./app/app.ts"
+    "start": "nodemon --watch app/**/* -e ts,tsx --exec ts-node ./app/app.ts"
   },
   "repository": {
     "type": "git",
